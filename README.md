@@ -9,7 +9,7 @@ You will use all HTML/CSS/Accessibility/Responsive design/Bootstrap knowledges t
 
 <p>Here the final result:</p>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/3/3c71cc99d2fc1c12a3d3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220829%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220829T204920Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4b6040c41675ef2fb798247c57a620f0b352775440853ed2eb32cb2270ae0561" alt="" loading="lazy" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/187297338-149f22a1-647b-4bea-9a8a-b65cfa242939.jpg" alt="" loading="lazy" style=""></p>
 
 <p>This webpage has been designed by Nicolas Philippot, UI/UX designer. 
 You can find final screens <a href="https://intranet-projects-files.s3.amazonaws.com/holbertonschool-webstack/623/Archive.zip" title="here" target="_blank">here</a></p>
