@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="Create a web site from scratch using Bootstrap">
+
+        <title>SmileSchool</title>
+
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="holberton_school-icon/style.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header__courses">
+            <div class="container-fluid p-4">
+                <div class="d-flex px-sm-5">
+                    <!-- Burger menu -->
+                    <input class="d-none" type="checkbox" id="burger-btn">
+                    <label class="d-block d-sm-none" id="burger-icon" for="burger-btn">
+                        <span class="holberton_school-icon-menu text-white"></span>
+                    </label>
+                    <!-- Header content -->
+                    <div id="header__content" class="w-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                        <!-- Logo -->
+                        <div>
+                            <a class="d-flex flex-column flex-sm-row align-items-center" href="homepage.html">
+                                <img src="images/smile_off.png" alt="SmileSchool logo" class="mb-3 mb-sm-0" width="40px" height="30px">
+                                <img src="images/logo.png" alt="SmileSchool logo" class="ml-sm-3" width="115px" height="30px">
+                            </a>
+                        </div>
+                        <!-- Nav bar -->
+                        <nav class="position-relative">
+                            <ul class="nav d-flex flex-column flex-sm-row align-items-center mt-3">
+                                <li class="nav-item">
+                                    <a href="courses.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#login" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Section hero -->
+                <section id="section__hero" class="w-100 d-flex flex-column justify-content-center align-items-center text-white mb-5">
+                    <h1 class="d-none d-sm-block font-family-courses">« Don’t cry because it’s over.<br>
+                        <strong>Smile</strong> because it happened. »</h1>
+                </section>
+            </div>
+        </header>
+    </body>
+</html>
