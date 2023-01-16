@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="Create a web site from scratch using Bootstrap">
+
+        <title>SmileSchool</title>
+
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="holberton_school-icon/style.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header__courses">
+            <div class="container-fluid p-4">
+                <div class="d-flex px-sm-5">
+                    <!-- Burger menu -->
+                    <input class="d-none" type="checkbox" id="burger-btn">
+                    <label class="d-block d-sm-none" id="burger-icon" for="burger-btn">
+                        <span class="holberton_school-icon-menu text-white"></span>
+                    </label>
+                    <!-- Header content -->
+                    <div id="header__content" class="w-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                        <!-- Logo -->
+                        <div>
+                            <a class="d-flex flex-column flex-sm-row align-items-center" href="homepage.html">
+                                <img src="images/smile_off.png" alt="SmileSchool logo" class="mb-3 mb-sm-0" width="40px" height="30px">
+                                <img src="images/logo.png" alt="SmileSchool logo" class="ml-sm-3" width="115px" height="30px">
+                            </a>
+                        </div>
+                        <!-- Nav bar -->
+                        <nav class="position-relative">
+                            <ul class="nav d-flex flex-column flex-sm-row align-items-center mt-3">
+                                <li class="nav-item">
+                                    <a href="courses.html" class="nav-link text-white text-uppercase font-weight-bold on-page p-0 m-3 pb-1">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#login" class="nav-link text-white text-uppercase font-weight-bold p-0 m-3 pb-1">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Section hero -->
+                <section id="section__hero" class="w-100 d-flex flex-column justify-content-center align-items-center text-white mb-5">
+                    <h1 class="d-none d-sm-block font-family-courses">« Don’t cry because it’s over.<br>
+                        <strong>Smile</strong> because it happened. »</h1>
+                </section>
+            </div>
+        </header>
+        <main>
+            <!-- Section filters -->
+            <section id="section__filters" class="container-fluid p-4 text-white bg-purple">
+                <div class="row px-sm-5">
+                    <div class="col-12 col-md-4 mb-4 pl-0">
+                        <p class="font-size-small text-uppercase font-weight-bold mb-2">Keywords</p>
+                        <div class="p-0 border-bottom">
+                            <label class="sr-only" for="searchBar">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend mr-0 height-filters">
+                                    <button type="submit" class="p-3 bg-filters holberton_school-icon-search_1 size-magnifying text-white border-0 rounded-0 rounded-corner-left"></button>
+                                </div>
+                                <input type="search" class="bg-filters height-filters form-control text-white border-0 rounded-0 rounded-corner-right" id="searchBar" placeholder="Search by keywords">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <p class="font-size-small text-uppercase font-weight-bold mb-2">Topic</p>
+                        <div class="dropdown height-filters">
+                            <button class="col-12 btn btn-secondary dropdown-toggle bg-filters h-100 mb-0 border-bottom rounded-0 font-size-large text-left" type="button" data-toggle="dropdown">
+                                Novice
+                            </button>
+                            <div class="col-12 dropdown-menu mt-0 border-0 rounded-0">
+                                <a class="dropdown-item" href="#">Novice</a>
+                                <a class="dropdown-item" href="#">Intermediate</a>
+                                <a class="dropdown-item" href="#">Expert</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 pr-0">
+                        <p class="font-size-small text-uppercase font-weight-bold mb-2">Sort by</p>
+                        <div class="dropdown height-filters">
+                            <button class="col-12 btn btn-secondary dropdown-toggle bg-filters h-100 mb-0 border-bottom rounded-0 font-size-large text-left" type="button" data-toggle="dropdown">
+                                Most Popular
+                            </button>
+                            <div class="col-12 dropdown-menu mt-0 border-0 rounded-0">
+                                <a class="dropdown-item" href="#">Most Popular</a>
+                                <a class="dropdown-item" href="#">Most Recent</a>
+                                <a class="dropdown-item" href="#">Most Viewed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section list courses -->
+            <section id="section__list-courses" class="container-fluid p-4 border-red d-flex flex-column mb-5 px-sm-5">
+                <p class="text-muted mt-5">11 videos</p>
+                <div class="row">
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 col-12 col-sm-6 col-md-4 col-lg-3 mt-5" style="width: 18rem">
+                        <img class="card-img-top img-fluid" src="images/thumbnail_4.jpg" alt="tuto 1">
+                        <img class="position-absolute position-play" src="images/play.png" alt="play" width="64px" height="64px">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title font-weight-bold">Diagonal Smile</h3>
+                            <p class="card-text">Loram ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                            <div class="d-flex m">
+                                <img class="rounded-circle mr-3" src="images/profile_1.jpg" alt="profil 1" width="30px" height="30px">
+                                <strong>Philip Massey</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <div>
+                                    <img src="images/star_on.png" alt="star 1" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 2" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 3" width="15px" height="15">
+                                    <img src="images/star_on.png" alt="star 4" width="15px" height="15">
+                                    <img src="images/star_off.png" alt="star 5" width="15px" height="15">
+                                </div>
+                                <strong>8 min</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black">
+            <div class="container-fluid p-4 mt-5">
+                <div class="w-100 d-flex flex-column justify-content-center align-items-center mt-3 px-sm-5">
+                    <div id="footer__content" class="w-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between p-0">
+                        <div class="mb-3">
+                            <img class="mr-2" src="images/smile_off.png" alt="smile logo" width="40px" height="30px">
+                            <img src="images/logo.png" alt="text logo" width="115px" height="30px">
+                        </div>
+                        <div class="mb-3">
+                            <a class="footer__social" href="https://www.facebook.com/HolbertonFRA/" target="_blank" rel="noreferrer">
+                                <span class="holberton_school-icon-ic_facebook text-white"></span>
+                            </a>
+                            <a class="footer__social ml-3" href="https://twitter.com/holbertonfra" target="_blank" rel="noreferrer">
+                                <span class="holberton_school-icon-ic_twitter text-white"></span>
+                            </a>
+                            <a class="footer__social ml-3" href="https://www.instagram.com/holbertonfrance/" target="_blank" rel="noreferrer">
+                                <span class="holberton_school-icon-ic_instagram text-white"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col text-center">
+                        <p class="f-smile p-0">©smileschool 2020</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
